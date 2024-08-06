@@ -1,0 +1,29 @@
+
+services:
+  parent:
+    build:
+      context: ./parent
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  microfrontend1:
+    build:
+      context: ./microfrontend1
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+
+  microfrontend2:
+    build:
+      context: ./microfrontend2
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
+
+  microfrontend3:
+    build:
+      context: ./microfrontend3
+      dockerfile: Dockerfile
+    ports:
+      - "3003:3003"
