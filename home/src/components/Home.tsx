@@ -1,10 +1,10 @@
 import { FunctionComponent, ReactElement } from "react";
-import { NavBar } from "./NavBar";
+// import aspireLogo from "../assets/aspire-logo.png";
 
 export const Home: FunctionComponent = (): ReactElement => {
     return (
         <div>
-            <NavBar />
+            {/* <img src={aspireLogo} alt="Aspire Logo" /> */}
             <h1>Home</h1>
         </div>
     );
